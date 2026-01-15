@@ -65,15 +65,20 @@
     display: flex;
 }
 
-
+.btn-primary {
+    padding: 10px 24px;
+    background-color: #E02C6D;
+    color: #ffffff;
+    border: none;
+    border-radius: 41px;
+}
 
 /* main style */
 nav {
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 60px auto;
     justify-content: space-between;
     align-items: center;
-    margin-top: 60px;
 }
 
 .logo {
@@ -97,6 +102,29 @@ nav {
 
 .menu li a:hover {
     color: #E02C6D;
+}
+
+.banner {
+    max-width: 1155px;
+    margin: 10px auto;
+    align-items: center;
+    gap: 133px;
+    /* background: url(./images/Circle design.svg); */
+    background-image: url("images/Circle design.svg");
+    
+}
+
+.banner-content {
+    max-width: 582px;
+}
+
+.banner-content h1 {
+    font-size: 3.25rem;
+    margin-bottom: 16px;
+}
+
+.banner-content button {
+    margin-top: 16px;
 }
 
 /* responsiveness for small devices */
