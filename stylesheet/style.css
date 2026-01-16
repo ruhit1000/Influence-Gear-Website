@@ -251,6 +251,12 @@ nav {
     .sponsors {
         max-width: 275px;
     }
+
+    .card-container {
+        grid-template-columns: 1fr;
+        width: 90%;
+        margin: 0 auto;
+    }
 }
 
 
@@ -258,5 +264,21 @@ nav {
 @media screen and (min-width: 577px) and (max-width: 992px) {
     nav {
         max-width: 90%;
+        margin: 20px auto;
+    }
+
+    .banner {
+        flex-direction: column-reverse;
+        gap: 20px;
+    }
+
+    .sponsors {
+        justify-content: center;
+    }
+
+    .card-container {
+        grid-template-columns: repeat(2, 1fr);
+        width: 90%;
+        margin: 0 auto;
     }
 }
