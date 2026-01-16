@@ -1,5 +1,7 @@
 /* font style */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 .poppins-thin {
     font-family: "Poppins", sans-serif;
@@ -53,6 +55,18 @@
     font-family: "Poppins", sans-serif;
     font-weight: 900;
     font-style: normal;
+}
+
+.font-inter {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+}
+
+.font-roboto {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-variation-settings:
+    "wdth" 100;
 }
 
 * {
@@ -109,9 +123,6 @@ nav {
     margin: 10px auto;
     align-items: center;
     gap: 133px;
-    /* background: url(./images/Circle design.svg); */
-    background-image: url("images/Circle design.svg");
-    
 }
 
 .banner-content {
@@ -127,9 +138,75 @@ nav {
     margin-top: 16px;
 }
 
+.sponsors {
+    max-width: 1110px;
+    margin: 70px auto;
+    padding: 36px 62px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
+}
+
+.popular-collection {
+    max-width: 1047px;
+    margin: 100px auto;
+    text-align: center;
+}
+
+.popular-collection h3 {
+    font-size: 1.75rem;
+    margin: 30px;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.card {
+    padding: 17px 14px;
+    text-align: left;
+    border-radius: 5px;
+    box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.15);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 16px;
+}
+
+.card h2 {
+    font-size: 1.75rem;
+    margin-bottom: 6px;
+}
+
+.card .price {
+    font-size: 1.5rem;
+}
+
+.star-rating {
+    color: #FB8200;
+    margin: 10px 0;
+}
+
+.star-rating .rating-text {
+    color: #5E6366;
+    font-size: 0.875rem;
+    font-weight: 700;
+}
+
+.card h5 {
+    font-size: 0.875rem;
+    color: #787885;
+    line-height: 20px;
+}
+
 /* responsiveness for small devices */
 @media screen and (max-width: 576px) {
-    .display-flex {
+    nav {
         flex-direction: column;
     }
 
@@ -146,6 +223,33 @@ nav {
         justify-content: center;
         flex-direction: row;
         flex-wrap: wrap;
+    }
+
+    .banner {
+        flex-direction: column-reverse;
+        gap: 14px;
+    }
+
+    .banner-image img {
+        max-width: 257px;
+    }
+
+    .banner-content {
+        text-align: center;
+    }
+
+    .banner-content h1 {
+        font-size: 1.75rem;
+    }
+
+    .banner-content p {
+        max-width: 321px;
+        margin: 0 auto;
+        font-size: 0.875rem;
+    }
+
+    .sponsors {
+        max-width: 275px;
     }
 }
 
