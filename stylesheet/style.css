@@ -123,7 +123,12 @@ nav {
     margin: 10px auto;
     align-items: center;
     gap: 133px;
-    background: url("images/Circle design.svg");
+}
+
+.banner-image {
+    background: url("../images/Circle-design.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .banner-content {
@@ -205,6 +210,10 @@ nav {
     line-height: 20px;
 }
 
+.text-right {
+    text-align: right;
+}
+
 .see-more-btn {
     color: #E02C6D;
     margin-top: 50px;
@@ -254,6 +263,10 @@ footer {
 
 .fa-brands {
     margin: 10px;
+}
+
+.hide {
+    display: none !important;
 }
 
 /* responsiveness for small devices */
@@ -310,6 +323,10 @@ footer {
         margin: 0 auto;
     }
 
+    .text-right {
+        text-align: center;
+    }
+
     .featured-products {
         width: 85%;
         flex-direction: column-reverse;
@@ -339,6 +356,10 @@ footer {
         grid-template-columns: repeat(2, 1fr);
         width: 90%;
         margin: 0 auto;
+    }
+
+    .text-right {
+        text-align: center;
     }
 
     .featured-products {
