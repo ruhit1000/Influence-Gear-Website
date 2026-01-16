@@ -123,6 +123,7 @@ nav {
     margin: 10px auto;
     align-items: center;
     gap: 133px;
+    background: url("images/Circle design.svg");
 }
 
 .banner-content {
@@ -150,7 +151,7 @@ nav {
 
 .popular-collection {
     max-width: 1047px;
-    margin: 100px auto;
+    margin: 50px auto;
     text-align: center;
 }
 
@@ -202,6 +203,40 @@ nav {
     font-size: 0.875rem;
     color: #787885;
     line-height: 20px;
+}
+
+.see-more-btn {
+    color: #E02C6D;
+    margin-top: 50px;
+    border: none;
+    background-color: white;
+}
+
+.featured-products {
+    max-width: 1110px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 96px;
+}
+
+.featured-details h2 {
+    font-size: 2.375rem;
+    color: #0A0826;
+    margin-bottom: 16px;
+}
+
+.featured-details p {
+    line-height: 28px;
+    color: #6C6C6C;
+    margin-bottom: 16px;
+}
+
+.join-btn {
+    color: white;
+    background-color: #E02C6D;
+    border: none;
+    padding: 10px 24px;
 }
 
 /* responsiveness for small devices */
@@ -256,6 +291,13 @@ nav {
         grid-template-columns: 1fr;
         width: 90%;
         margin: 0 auto;
+    }
+
+    .featured-products {
+        width: 85%;
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 30px;
     }
 }
 
