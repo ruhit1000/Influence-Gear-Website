@@ -239,6 +239,23 @@ nav {
     padding: 10px 24px;
 }
 
+footer {
+    margin-top: 100px;
+    padding: 50px;
+    text-align: center;
+    background-color: #362F4F;
+    color: white;
+}
+
+.footer-container h3 {
+    font-size: 1.5rem;
+    margin: 3px 10px;
+}
+
+.fa-brands {
+    margin: 10px;
+}
+
 /* responsiveness for small devices */
 @media screen and (max-width: 576px) {
     nav {
