@@ -323,4 +323,11 @@ nav {
         width: 90%;
         margin: 0 auto;
     }
+
+    .featured-products {
+        width: 85%;
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 30px;
+    }
 }
